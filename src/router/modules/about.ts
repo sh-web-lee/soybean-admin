@@ -1,4 +1,4 @@
-const about1: AuthRoute.Route = {
+const about: AuthRoute.Route = {
   name: 'about',
   path: '/about',
   component: 'self',
@@ -12,4 +12,4 @@ const about1: AuthRoute.Route = {
   }
 };
 
-export default about1;
+export default about;

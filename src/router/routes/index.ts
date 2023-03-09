@@ -24,7 +24,7 @@ export const constantRoutes: AuthRoute.Route[] = [
       };
     },
     meta: {
-      title: '登录',
+      title: 'login',
       dynamicPath: `/login/:module(${getLoginModuleRegExp()})?`,
       singleLayout: 'blank'
     }

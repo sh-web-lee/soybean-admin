@@ -20,7 +20,7 @@ const { iconRender } = useIconRender();
 
 const options: DropdownOption[] = [
   {
-    label: '用户中心',
+    label: 'Your account',
     key: 'user-center',
     icon: iconRender({ icon: 'carbon:user-avatar' })
   },
@@ -29,7 +29,7 @@ const options: DropdownOption[] = [
     key: 'divider'
   },
   {
-    label: '退出登录',
+    label: 'Log out',
     key: 'logout',
     icon: iconRender({ icon: 'carbon:logout' })
   }
@@ -41,10 +41,10 @@ function handleDropdown(optionKey: string) {
   const key = optionKey as DropdownKey;
   if (key === 'logout') {
     window.$dialog?.info({
-      title: '提示',
-      content: '您确定要退出登录吗？',
-      positiveText: '确定',
-      negativeText: '取消',
+      title: 'Tips',
+      content: 'Are you sure log out?',
+      positiveText: 'Sure',
+      negativeText: 'Cancel',
       onPositiveClick: () => {
         auth.resetAuthStore();
       }

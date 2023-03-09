@@ -1,6 +1,6 @@
 <template>
   <n-space :vertical="true">
-    <n-divider class="!mb-0 text-14px text-[#666]">其他账户登录</n-divider>
+    <n-divider class="!mb-0 text-14px text-[#666]">Other</n-divider>
     <n-space justify="center">
       <n-button
         v-for="item in accounts"
@@ -23,17 +23,17 @@ const emit = defineEmits<Emits>();
 
 const accounts = [
   {
-    label: '超级管理员',
+    label: 'Super',
     userName: 'Super',
     password: 'super123'
   },
   {
-    label: '管理员',
+    label: 'Admin',
     userName: 'Admin',
     password: 'admin123'
   },
   {
-    label: '普通用户',
+    label: 'User',
     userName: 'User01',
     password: 'user01123'
   }

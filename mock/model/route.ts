@@ -10,7 +10,7 @@ export const routeModel: Record<Auth.RoleType, AuthRoute.Route[]> = {
           path: '/dashboard/analysis',
           component: 'self',
           meta: {
-            title: '分析页',
+            title: 'Analysis',
             requiresAuth: true,
             icon: 'icon-park-outline:analysis'
           }
@@ -33,6 +33,38 @@ export const routeModel: Record<Auth.RoleType, AuthRoute.Route[]> = {
       }
     },
     {
+      name: 'article',
+      path: '/article',
+      component: 'basic',
+      children: [
+        {
+          name: 'article_manage',
+          path: '/article/manage',
+          component: 'self',
+          meta: {
+            title: 'Article manage',
+            requiresAuth: true,
+            icon: 'icon-park-outline:analysis'
+          }
+        },
+        {
+          name: 'article_create',
+          path: '/article/create',
+          component: 'self',
+          meta: {
+            title: 'Create article',
+            requiresAuth: true,
+            icon: 'icon-park-outline:analysis'
+          }
+        }
+      ],
+      meta: {
+        title: 'Dashboard',
+        icon: 'mdi:monitor-dashboard',
+        order: 1
+      }
+    },
+    {
       name: 'document',
       path: '/document',
       component: 'basic',
@@ -42,7 +74,7 @@ export const routeModel: Record<Auth.RoleType, AuthRoute.Route[]> = {
           path: '/document/vue',
           component: 'self',
           meta: {
-            title: 'vue文档',
+            title: 'vue',
             requiresAuth: true,
             icon: 'logos:vue'
           }
@@ -521,7 +553,7 @@ export const routeModel: Record<Auth.RoleType, AuthRoute.Route[]> = {
           path: '/dashboard/analysis',
           component: 'self',
           meta: {
-            title: '分析页',
+            title: 'Analysis',
             requiresAuth: true,
             icon: 'icon-park-outline:analysis'
           }
@@ -1022,7 +1054,7 @@ export const routeModel: Record<Auth.RoleType, AuthRoute.Route[]> = {
           path: '/dashboard/analysis',
           component: 'self',
           meta: {
-            title: '分析页',
+            title: 'Analysis',
             requiresAuth: true,
             icon: 'icon-park-outline:analysis'
           }

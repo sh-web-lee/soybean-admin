@@ -8,7 +8,7 @@ const document: AuthRoute.Route = {
       path: '/document/vue',
       component: 'self',
       meta: {
-        title: 'vue文档',
+        title: 'vue',
         requiresAuth: true,
         icon: 'logos:vue'
       }
@@ -18,7 +18,7 @@ const document: AuthRoute.Route = {
       path: '/document/vite',
       component: 'self',
       meta: {
-        title: 'vite文档',
+        title: 'vite',
         requiresAuth: true,
         icon: 'logos:vitejs'
       }
@@ -28,7 +28,7 @@ const document: AuthRoute.Route = {
       path: '/document/naive',
       component: 'self',
       meta: {
-        title: 'naive文档',
+        title: 'naive',
         requiresAuth: true,
         icon: 'logos:naiveui'
       }
@@ -38,7 +38,7 @@ const document: AuthRoute.Route = {
       path: '/document/project',
       component: 'self',
       meta: {
-        title: '项目文档',
+        title: 'Document',
         requiresAuth: true,
         localIcon: 'logo'
       }
@@ -55,7 +55,7 @@ const document: AuthRoute.Route = {
     }
   ],
   meta: {
-    title: '文档',
+    title: 'Document',
     icon: 'mdi:file-document-multiple-outline',
     order: 2
   }

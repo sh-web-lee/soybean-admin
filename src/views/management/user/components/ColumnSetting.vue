@@ -3,7 +3,7 @@
     <template #trigger>
       <n-button size="small" type="primary">
         <icon-ant-design-setting-outlined class="mr-4px text-16px" />
-        表格列设置
+        Table handler
       </n-button>
     </template>
     <div class="w-180px">

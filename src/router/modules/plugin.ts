@@ -30,7 +30,7 @@ const plugin: AuthRoute.Route = {
         }
       ],
       meta: {
-        title: '图表',
+        title: 'Chatrs',
         icon: 'mdi:chart-areaspline'
       }
     },
@@ -39,7 +39,7 @@ const plugin: AuthRoute.Route = {
       path: '/plugin/map',
       component: 'self',
       meta: {
-        title: '地图',
+        title: 'Map',
         requiresAuth: true,
         icon: 'mdi:map'
       }
@@ -49,7 +49,7 @@ const plugin: AuthRoute.Route = {
       path: '/plugin/video',
       component: 'self',
       meta: {
-        title: '视频',
+        title: 'Video',
         requiresAuth: true,
         icon: 'mdi:video'
       }
@@ -64,7 +64,7 @@ const plugin: AuthRoute.Route = {
           path: '/plugin/editor/quill',
           component: 'self',
           meta: {
-            title: '富文本编辑器',
+            title: 'Rich text',
             requiresAuth: true,
             icon: 'mdi:file-document-edit-outline'
           }
@@ -74,14 +74,14 @@ const plugin: AuthRoute.Route = {
           path: '/plugin/editor/markdown',
           component: 'self',
           meta: {
-            title: 'markdown编辑器',
+            title: 'markdown',
             requiresAuth: true,
             icon: 'ri:markdown-line'
           }
         }
       ],
       meta: {
-        title: '编辑器',
+        title: 'Editor',
         icon: 'icon-park-outline:editor'
       }
     },
@@ -90,7 +90,7 @@ const plugin: AuthRoute.Route = {
       path: '/plugin/swiper',
       component: 'self',
       meta: {
-        title: 'Swiper插件',
+        title: 'Swiper',
         requiresAuth: true,
         icon: 'simple-icons:swiper'
       }
@@ -100,7 +100,7 @@ const plugin: AuthRoute.Route = {
       path: '/plugin/copy',
       component: 'self',
       meta: {
-        title: '剪贴板',
+        title: 'Clipboard',
         requiresAuth: true,
         icon: 'mdi:clipboard-outline'
       }
@@ -110,7 +110,7 @@ const plugin: AuthRoute.Route = {
       path: '/plugin/icon',
       component: 'self',
       meta: {
-        title: '图标',
+        title: 'Icon',
         requiresAuth: true,
         localIcon: 'custom-icon'
       }
@@ -120,14 +120,14 @@ const plugin: AuthRoute.Route = {
       path: '/plugin/print',
       component: 'self',
       meta: {
-        title: '打印',
+        title: 'Print',
         requiresAuth: true,
         icon: 'mdi:printer'
       }
     }
   ],
   meta: {
-    title: '插件示例',
+    title: 'Plugins',
     icon: 'clarity:plugin-line',
     order: 4
   }

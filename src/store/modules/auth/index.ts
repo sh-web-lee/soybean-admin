@@ -66,6 +66,7 @@ export const useAuthStore = defineStore('auth-store', {
         toLoginRedirect();
 
         // 登录成功弹出欢迎提示
+        console.log('route:', route);
         if (route.isInitAuthRoute) {
           window.$notification?.success({
             title: '登录成功!',

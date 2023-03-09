@@ -13,7 +13,7 @@
       </div>
     </n-form-item>
     <n-space :vertical="true" size="large">
-      <n-button type="primary" size="large" :block="true" :round="true" @click="handleSubmit">确定</n-button>
+      <n-button type="primary" size="large" :block="true" :round="true" @click="handleSubmit">Log in</n-button>
       <n-button size="large" :block="true" :round="true" @click="toLoginModule('pwd-login')">返回</n-button>
     </n-space>
   </n-form>

@@ -2,9 +2,9 @@
   <n-grid :item-responsive="true" :x-gap="16" :y-gap="16">
     <n-grid-item span="0:24 640:24 1024:16">
       <n-space :vertical="true" :size="16">
-        <n-card title="项目主要技术栈" :bordered="false" size="small" class="shadow-sm rounded-16px">
+        <n-card title="Main technology stack" :bordered="false" size="small" class="shadow-sm rounded-16px">
           <template #header-extra>
-            <a class="text-primary" href="javascript:;">更多技术栈</a>
+            <a class="text-primary" href="javascript:;">Explore</a>
           </template>
           <n-grid :item-responsive="true" responsive="screen" cols="m:2 l:3" :x-gap="8" :y-gap="8">
             <n-grid-item v-for="item in technology" :key="item.id">

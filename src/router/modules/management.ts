@@ -8,7 +8,7 @@ const management: AuthRoute.Route = {
       path: '/management/auth',
       component: 'self',
       meta: {
-        title: '权限管理',
+        title: 'Manage auth',
         requiresAuth: true,
         icon: 'ic:baseline-security'
       }
@@ -18,7 +18,7 @@ const management: AuthRoute.Route = {
       path: '/management/role',
       component: 'self',
       meta: {
-        title: '角色管理',
+        title: 'Manage role',
         requiresAuth: true,
         icon: 'carbon:user-role'
       }
@@ -28,7 +28,7 @@ const management: AuthRoute.Route = {
       path: '/management/user',
       component: 'self',
       meta: {
-        title: '用户管理',
+        title: 'Manage user',
         requiresAuth: true,
         icon: 'ic:round-manage-accounts'
       }
@@ -38,14 +38,14 @@ const management: AuthRoute.Route = {
       path: '/management/route',
       component: 'self',
       meta: {
-        title: '路由管理',
+        title: 'Manage route',
         requiresAuth: true,
         icon: 'material-symbols:route'
       }
     }
   ],
   meta: {
-    title: '系统管理',
+    title: 'System manage',
     icon: 'carbon:cloud-service-management',
     order: 9
   }

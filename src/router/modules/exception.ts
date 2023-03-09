@@ -8,7 +8,7 @@ const exception: AuthRoute.Route = {
       path: '/exception/403',
       component: 'self',
       meta: {
-        title: '异常页403',
+        title: '403',
         requiresAuth: true,
         icon: 'ic:baseline-block'
       }
@@ -18,7 +18,7 @@ const exception: AuthRoute.Route = {
       path: '/exception/404',
       component: 'self',
       meta: {
-        title: '异常页404',
+        title: '404',
         requiresAuth: true,
         icon: 'ic:baseline-web-asset-off'
       }
@@ -28,14 +28,14 @@ const exception: AuthRoute.Route = {
       path: '/exception/500',
       component: 'self',
       meta: {
-        title: '异常页500',
+        title: '500',
         requiresAuth: true,
         icon: 'ic:baseline-wifi-off'
       }
     }
   ],
   meta: {
-    title: '异常页',
+    title: 'Exceptions',
     icon: 'ant-design:exception-outlined',
     order: 7
   }

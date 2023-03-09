@@ -8,7 +8,7 @@ const authDemo: AuthRoute.Route = {
       path: '/auth-demo/permission',
       component: 'self',
       meta: {
-        title: '权限切换',
+        title: 'Permission switch',
         requiresAuth: true,
         icon: 'ic:round-construction'
       }
@@ -18,7 +18,7 @@ const authDemo: AuthRoute.Route = {
       path: '/auth-demo/super',
       component: 'self',
       meta: {
-        title: '超级管理员可见',
+        title: 'Super administrators',
         requiresAuth: true,
         permissions: ['super'],
         icon: 'ic:round-supervisor-account'
@@ -26,7 +26,7 @@ const authDemo: AuthRoute.Route = {
     }
   ],
   meta: {
-    title: '权限示例',
+    title: 'Auth',
     icon: 'ic:baseline-security',
     order: 5
   }

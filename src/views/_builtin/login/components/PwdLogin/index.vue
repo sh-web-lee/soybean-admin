@@ -8,8 +8,8 @@
     </n-form-item>
     <n-space :vertical="true" :size="24">
       <div class="flex-y-center justify-between">
-        <n-checkbox v-model:checked="rememberMe">记住我</n-checkbox>
-        <n-button :text="true" @click="toLoginModule('reset-pwd')">忘记密码？</n-button>
+        <n-checkbox v-model:checked="rememberMe">Remember</n-checkbox>
+        <n-button :text="true" @click="toLoginModule('reset-pwd')">Forget?</n-button>
       </div>
       <n-button
         type="primary"
@@ -19,7 +19,7 @@
         :loading="auth.loginLoading"
         @click="handleSubmit"
       >
-        确定
+        Log in
       </n-button>
       <div class="flex-y-center justify-between">
         <n-button class="flex-1" :block="true" @click="toLoginModule('code-login')">
@@ -51,8 +51,8 @@ const { toLoginModule } = useRouterPush();
 const formRef = ref<HTMLElement & FormInst>();
 
 const model = reactive({
-  userName: 'Soybean',
-  password: 'soybean123'
+  userName: 'lee-malachi',
+  password: 'zxc123zxc..'
 });
 
 const rules: FormRules = {

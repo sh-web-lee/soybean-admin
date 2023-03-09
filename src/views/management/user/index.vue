@@ -1,24 +1,24 @@
 <template>
-  <n-card title="用户管理" :bordered="false" class="rounded-16px shadow-sm">
+  <n-card title="Manage user" :bordered="false" class="rounded-16px shadow-sm">
     <n-space class="pb-12px" justify="space-between">
       <n-space>
         <n-button type="primary" @click="handleAddTable">
           <icon-ic-round-plus class="mr-4px text-20px" />
-          新增
+          Add
         </n-button>
         <n-button type="error">
           <icon-ic-round-delete class="mr-4px text-20px" />
-          删除
+          Delete
         </n-button>
         <n-button type="success">
           <icon-uil:export class="mr-4px text-20px" />
-          导出Excel
+          Export excel
         </n-button>
       </n-space>
       <n-space align="center" :size="18">
         <n-button size="small" type="primary" @click="getTableData">
           <icon-mdi-refresh class="mr-4px text-16px" :class="{ 'animate-spin': loading }" />
-          刷新表格
+          Refresh
         </n-button>
         <column-setting v-model:columns="columns" />
       </n-space>
@@ -66,22 +66,22 @@ const columns: Ref<DataTableColumns<UserManagement.User>> = ref([
   },
   {
     key: 'index',
-    title: '序号',
+    title: 'Serial number',
     align: 'center'
   },
   {
     key: 'userName',
-    title: '用户名',
+    title: 'User name',
     align: 'center'
   },
   {
     key: 'age',
-    title: '用户年龄',
+    title: 'Age',
     align: 'center'
   },
   {
     key: 'gender',
-    title: '性别',
+    title: 'Gender',
     align: 'center',
     render: row => {
       if (row.gender) {
@@ -98,17 +98,17 @@ const columns: Ref<DataTableColumns<UserManagement.User>> = ref([
   },
   {
     key: 'phone',
-    title: '手机号码',
+    title: 'Phone',
     align: 'center'
   },
   {
     key: 'email',
-    title: '邮箱',
+    title: 'Email',
     align: 'center'
   },
   {
     key: 'userStatus',
-    title: '状态',
+    title: 'Status',
     align: 'center',
     render: row => {
       if (row.userStatus) {
@@ -126,7 +126,7 @@ const columns: Ref<DataTableColumns<UserManagement.User>> = ref([
   },
   {
     key: 'actions',
-    title: '操作',
+    title: 'Handler',
     align: 'center',
     render: row => {
       return (

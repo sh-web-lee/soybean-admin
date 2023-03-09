@@ -48,7 +48,7 @@ const lineOptions = ref<ECOption>({
     }
   },
   legend: {
-    data: ['下载量', '注册数']
+    data: ['Downloads', 'Registers']
   },
   grid: {
     left: '3%',
@@ -71,7 +71,7 @@ const lineOptions = ref<ECOption>({
   series: [
     {
       color: '#8e9dff',
-      name: '下载量',
+      name: 'Downloads',
       type: 'line',
       smooth: true,
       stack: 'Total',
@@ -101,7 +101,7 @@ const lineOptions = ref<ECOption>({
     },
     {
       color: '#26deca',
-      name: '注册数',
+      name: 'Registers',
       type: 'line',
       smooth: true,
       stack: 'Total',
@@ -170,10 +170,10 @@ const pieOptions = ref<ECOption>({
         show: false
       },
       data: [
-        { value: 20, name: '学习' },
-        { value: 10, name: '娱乐' },
-        { value: 30, name: '工作' },
-        { value: 40, name: '休息' }
+        { value: 20, name: 'Learn' },
+        { value: 10, name: 'Entertainment' },
+        { value: 30, name: 'Work' },
+        { value: 40, name: 'Rest' }
       ]
     }
   ]

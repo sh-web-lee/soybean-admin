@@ -8,7 +8,7 @@ const component: AuthRoute.Route = {
       path: '/component/button',
       component: 'self',
       meta: {
-        title: '按钮',
+        title: 'Button',
         requiresAuth: true,
         icon: 'mdi:button-cursor'
       }
@@ -18,7 +18,7 @@ const component: AuthRoute.Route = {
       path: '/component/card',
       component: 'self',
       meta: {
-        title: '卡片',
+        title: 'Card',
         requiresAuth: true,
         icon: 'mdi:card-outline'
       }
@@ -28,14 +28,14 @@ const component: AuthRoute.Route = {
       path: '/component/table',
       component: 'self',
       meta: {
-        title: '表格',
+        title: 'Table',
         requiresAuth: true,
         icon: 'mdi:table-large'
       }
     }
   ],
   meta: {
-    title: '组件示例',
+    title: 'Components',
     icon: 'cib:app-store',
     order: 3
   }
