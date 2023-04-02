@@ -69,7 +69,7 @@ const submitForm = () => {
   </n-form>
 </template>
 <style scoped>
-::v-deep .n-form-item-feedback-wrapper {
+:deep(.n-form-item-feedback-wrapper) {
   min-height: 0 !important;
 }
 </style>

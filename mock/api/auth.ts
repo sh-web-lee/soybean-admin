@@ -21,7 +21,7 @@ const apis: MockMethod[] = [
   },
   // 用户+密码 登录
   {
-    url: '/mock/login',
+    url: '/login',
     method: 'post',
     response: (options: Service.MockOption): Service.MockServiceResult<ApiAuth.Token | null> => {
       const { userName = undefined, password = undefined } = options.body;
@@ -65,7 +65,7 @@ const apis: MockMethod[] = [
       if (!authorization) {
         return {
           code: REFRESH_TOKEN_CODE,
-          message: '用户已失效或不存在！',
+          message: '用户已失效或不存在！!!!!',
           data: null
         };
       }
@@ -75,7 +75,8 @@ const apis: MockMethod[] = [
         userRole: 'user'
       };
       const isInUser = userModel.some(item => {
-        const flag = item.token === authorization;
+        // const flag = item.token === authorization;
+        const flag = Boolean(authorization);
         if (flag) {
           const { userId: itemUserId, userName, userRole } = item;
           Object.assign(userInfo, { userId: itemUserId, userName, userRole });

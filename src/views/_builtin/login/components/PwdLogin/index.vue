@@ -1,7 +1,7 @@
 <template>
   <n-form ref="formRef" :model="model" :rules="rules" size="large" :show-label="false">
-    <n-form-item path="userName">
-      <n-input v-model:value="model.userName" placeholder="请输入用户名" />
+    <n-form-item path="username">
+      <n-input v-model:value="model.username" placeholder="请输入用户名" />
     </n-form-item>
     <n-form-item path="password">
       <n-input v-model:value="model.password" type="password" show-password-on="click" placeholder="请输入密码" />
@@ -51,7 +51,7 @@ const { toLoginModule } = useRouterPush();
 const formRef = ref<HTMLElement & FormInst>();
 
 const model = reactive({
-  userName: 'lee-malachi',
+  username: 'lijianyang',
   password: 'zxc123zxc..'
 });
 
@@ -64,9 +64,9 @@ const rememberMe = ref(false);
 async function handleSubmit() {
   await formRef.value?.validate();
 
-  const { userName, password } = model;
+  const { username, password } = model;
 
-  login(userName, password);
+  login(username, password);
 }
 
 function handleLoginOtherAccount(param: { userName: string; password: string }) {
